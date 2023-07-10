@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gradient-cloud-app/static/css/main.ae470604.css",
+    "main.js": "/gradient-cloud-app/static/js/main.f9af229b.js",
+    "static/js/787.4321ccce.chunk.js": "/gradient-cloud-app/static/js/787.4321ccce.chunk.js",
+    "index.html": "/gradient-cloud-app/index.html",
+    "main.ae470604.css.map": "/gradient-cloud-app/static/css/main.ae470604.css.map",
+    "main.f9af229b.js.map": "/gradient-cloud-app/static/js/main.f9af229b.js.map",
+    "787.4321ccce.chunk.js.map": "/gradient-cloud-app/static/js/787.4321ccce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae470604.css",
+    "static/js/main.f9af229b.js"
+  ]
+}
