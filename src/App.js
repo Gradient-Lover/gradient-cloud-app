@@ -48,8 +48,15 @@ function App() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Gradient Cloud
+          <a
+            className="navbar-brand"
+            href="https://picfiles.alphacoders.com/304/thumb-1920-304795.jpg"
+          >
+            <img
+              src="https://th.bing.com/th/id/R.3225b3a014237e368075090d504f2933?rik=hPHPmWhLICOc8Q&riu=http%3a%2f%2fpre13.deviantart.net%2f5b21%2fth%2fpre%2fi%2f2015%2f284%2ff%2ff%2fcloud_puking_rainbows_by_kittykatmeow121-d9csyrx.jpg&ehk=dmLa6NChTaBDKM1pX7fm3lfLZZkCO9ebTEprHfWPyVQ%3d&risl=&pid=ImgRaw&r=0"
+              width="50px"
+              height="50px"
+            ></img>
           </a>
           <button
             className="navbar-toggler"
@@ -65,13 +72,8 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
+                <a className="nav-link active" aria-current="page" href=".home">
+                  <i class="bi bi-house-fill"></i>
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -82,17 +84,17 @@ function App() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Organise by :
                 </a>
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      𝕃𝕚𝕜𝕖𝕤
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      🅓🅐🅣🅔
                     </a>
                   </li>
                   <li>
@@ -100,31 +102,17 @@ function App() {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      𝓓𝓮𝓯𝓪𝓾𝓵𝓽
                     </a>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-              </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
 
-      <div className="container">
+      <div className="home container">
         <div className="row my-2 rounded bg-light bg-opacity-25 py-2">
           <div className="col-md-6 col-lg-4 col-xl-3 my-2 ">
             <div class="card">
@@ -144,6 +132,7 @@ function App() {
                 <button
                   className="control"
                   style={{
+                    borderRadius: `10px`,
                     float: `left`,
                   }}
                   onClick={() => {
@@ -152,11 +141,10 @@ function App() {
                 >
                   Linear Gradient
                 </button>
-                <br />
                 <button
                   className="control"
                   style={{
-                    marginLeft: `auto`,
+                    borderRadius: `10px`,
                     float: `right`,
                   }}
                   onClick={() => {
@@ -239,7 +227,17 @@ function App() {
           </div>
           {loading ? (
             <div className="col-md-6 col-lg-4 col-xl-3 my-2 d-flex align-items-center justify-content-center">
-              <h2>Loading...</h2>
+              <div class="container">
+                <span class="react-logo">
+                  <span class="nucleo">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.BOcgCzqnEKHMkJWNkBrtpAHaHa?pid=ImgDet&rs=1"
+                      width="100px"
+                      height="100px"
+                    />
+                  </span>
+                </span>
+              </div>
             </div>
           ) : (
             ""
@@ -266,7 +264,7 @@ function App() {
                       <div className="d-flex justify-content-between">
                         <button
                           onClick={() => {
-                            navigator.clipboard.writeText(data.leftColor);
+                            navigator.clipboard.writeText(data.leftcolor);
                           }}
                           className="btn border border-1 rounded-pill py-1 px-3"
                           style={{ float: `right` }}
@@ -281,7 +279,7 @@ function App() {
                         </span>
                         <button
                           onClick={() => {
-                            navigator.clipboard.writeText(data.rightColor);
+                            navigator.clipboard.writeText(data.rightcolor);
                           }}
                           className="btn border border-1 rounded-pill py-1 px-3"
                           style={{ float: `left` }}
@@ -295,7 +293,13 @@ function App() {
                     </div>
 
                     <a href="/" class="btn likes-button">
-                      <abbr title="Likes">
+                      <abbr
+                        title="Likes"
+                        style={{
+                          border: `none`,
+                          textDecoration: `none`,
+                        }}
+                      >
                         {data.likes}
                         <i class="bi bi-hand-thumbs-up-fill" id="likes"></i>
                       </abbr>
